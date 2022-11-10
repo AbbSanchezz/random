@@ -1,0 +1,26 @@
+<!DOCTYPE html>  
+ <html>  
+ <body>  
+ <img src="https://i.pinimg.com/564x/44/79/de/4479de1aed36546d7bc85e75446c7304.jpg">
+ <h1>pone 2 numeros!!:</h1>  
+ <input id="num1"><br>  
+ <input id="num2">  
+ <button type="button" onclick="myFunction()">Sumar</button>  
+ <p id="sumando"></p>  
+ <script>  
+ function myFunction() {  
+   var x,y,suma,text;  
+   x = document.getElementById("num1").value;  
+   y = document.getElementById("num2").value;  
+   if (isNaN(x) || isNaN(y)) {  
+     text = "Es necesarios introducir dos números válidos";  
+   } else {  
+     //si no ponemos parseFloat concatenaría x con y  
+     suma=parseFloat(x)+parseFloat(y);  
+     text= suma;  
+   }  
+   document.getElementById("sumando").innerHTML = text;  
+ }  
+ </script>  
+ </body>  
+ </html> 
